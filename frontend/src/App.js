@@ -51,7 +51,11 @@ const speakText = (text) => {
     setPrompt("");
 
     try {
-     const res = await axios.post("http://127.0.0.1:8000/ask", { prompt: userPrompt });
+    const res = await axios.post(
+  "https://jarvis-chatmodelbackend.onrender.com/ask",
+  { prompt: userPrompt }
+);
+
 
       const aiReply = res.data.reply || "Sorry, I didn’t catch that.";
       const aiMessage = { sender: "ai", text: aiReply };
@@ -87,7 +91,11 @@ const askPresetQuestion = async (question) => {
   setChat((prev) => [...prev, { sender: "user", text: question }]);
 
   try {
-    const res = await axios.post("http://127.0.0.1:8000/ask", { prompt: question });
+   const res = await axios.post(
+  "https://jarvis-chatmodelbackend.onrender.com/ask",
+  { prompt: question }
+);
+
     const aiReply = res.data.reply || "Sorry, I didn’t catch that.";
     const aiMessage = { sender: "ai", text: aiReply };
     setChat((prev) => [...prev, aiMessage]);

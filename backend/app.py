@@ -20,7 +20,8 @@ app = FastAPI()
 # Allow frontend (React) to access API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React dev server
+    allow_origins=["https://jarvis-chat-model.vercel.app",
+        "*"],  # React dev server
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
