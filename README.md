@@ -1,7 +1,8 @@
 🚀 Jarvis AI — Your Personal Voice-Enabled Chat Assistant
 
 Live Demo: https://jarvis-chat-model.vercel.app
-![Chat UI](./frontend/assets/jarvis2.png)
+![Uploading ChatGPT Image Nov 13, 2025, 05_48_38 PM.png…]()
+
 
 A futuristic, glassmorphic AI chatbot built with React + FastAPI + Groq (Llama-3.3-70B).
 Features smooth UI, voice replies, intelligent responses, and real-time chat.
@@ -49,6 +50,9 @@ https://jarvis-chatmodelbackend.onrender.com/ask
 ❤️ Credits
 
 Developed by Prachi Vernekar
+
 AI Powered by Groq Llama-3.3-70B
+
 Frontend Hosting: Vercel
+
 Backend Hosting: Render
