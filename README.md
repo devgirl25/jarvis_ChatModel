@@ -1,7 +1,7 @@
 🚀 Jarvis AI — Your Personal Voice-Enabled Chat Assistant
 
 Live Demo: https://jarvis-chat-model.vercel.app
-<img src="frontend/src/assets/jarvis.png" alt="Jarvis Chatbot" width="100" height="100">
+<img src="frontend/src/assets/jarvis2.png" alt="Jarvis Chatbot" width="100" height="100">
 
 A futuristic, glassmorphic AI chatbot built with React + FastAPI + Groq (Llama-3.3-70B).
 Features smooth UI, voice replies, intelligent responses, and real-time chat.
