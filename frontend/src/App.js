@@ -6,7 +6,7 @@ import chatbotimg from "./assets/jarvis2.png";
 function App() {
   const [prompt, setPrompt] = useState("");
   const [chat, setChat] = useState([
-    { sender: "ai", text: "Hello! I am Jarvis. How can I help you today?" },
+    { sender: "ai", text: "system activated How can I help you today?" },
   ]);
   const messagesEndRef = useRef(null);
 
@@ -19,7 +19,7 @@ function App() {
 const speakText = (text) => {
   // 🧹 Clean the text to remove symbols, markdown, etc.
   const cleanText = text
-    .replace(/[*_#~`<>^{}[\]|\\]/g, "") // remove markdown symbols
+    .replace(/[-=*_#~`<>^{}[\]|\\]/g, "") // remove markdown symbols
     .replace(/\s{2,}/g, " ")             // collapse multiple spaces
     .replace(/https?:\/\/\S+/g, "")      // remove URLs
     .trim();
@@ -80,7 +80,7 @@ const startNewChat = () => {
   speechSynthesis.cancel();
 
   // Reset chat with Jarvis greeting
-  setChat([{ sender: "ai", text: "Hello! I am Jarvis. How can I help you today?" }]);
+  setChat([{ sender: "ai", text: "system activated How can I help you today?" }]);
 };
 // 🧠 When a preset question (nav link) is clicked
 const askPresetQuestion = async (question) => {
